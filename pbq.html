@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comptia Security+ Performance Based Questions</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .scenario-container {
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .scenario {
+      margin: 20px auto;
+      width: 80%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    select {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .result {
+      margin-top: 10px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Comptia Security+ Performance Based Questions: Security Controls, Types, and Application</h1>
+
+  <div class="scenario-container">
+    <h2>Scenario:</h2>
+    <p>As a security consultant for a newly-launched Information Technology (IT) company, you have assisted in the security planning process to ensure that the best security controls are in place. However, an organization cannot realistically plan for every situation, so processes and procedures need to be fluid and adjusted as security issues arise. With all things considered, the company has asked you to extend your consulting work past the initial planning process to assist with any security issues that arise in the first few months of business. As well, you will help select security controls to resolve any such issues.</p>
+  </div>
+
+  <div class="scenario">
+    <h2>Scenario 1:</h2>
+    <p><strong>IT Admin:</strong> That last attack did some real damage! We need to add systems that identify malicious activity on our network immediately.</p>
+    <div>
+      <label for="scenario1-category">Control Category Remediation Needed:</label>
+      <select id="scenario1-category">
+        <option value="">Select an option</option>
+        <option value="Technical">Technical</option>
+        <option value="Managerial">Managerial</option>
+        <option value="Operational">Operational</option>
+        <option value="Physical">Physical</option>
+      </select>
+      <div class="result" id="result-scenario1"></div>
+    </div>
+    <div>
+      <label for="scenario1-type">Control Type Remediation Needed:</label>
+      <select id="scenario1-type">
+        <option value="">Select an option</option>
+        <option value="Deterrent">Deterrent</option>
+        <option value="Detective">Detective</option>
+        <option value="Corrective">Corrective</option>
+        <option value="Compensating">Compensating</option>
+        <option value="Directive">Directive</option>
+        <option value="Preventive">Preventive</option>
+      </select>
+      <div class="result" id="result-type1"></div>
+    </div>
+    <div>
+      <label for="scenario1-remediation">Control Remediation Needed:</label>
+      <select id="scenario1-remediation">
+        <option value="">Select an option</option>
+        <option value="Create AUP">Create AUP</option>
+        <option value="Create Permissions Policy">Create Permissions Policy</option>
+        <option value="Install Alarm">Install Alarm</option>
+        <option value="Install Barrier">Install Barrier</option>
+        <option value="Install Host Antivirus">Install Host Antivirus</option>
+        <option value="Install IDS">Install IDS</option>
+        <option value="Install Keycard Entry">Install Keycard Entry</option>
+        <option value="Perform Security Audit">Perform Security Audit</option>
+      </select>
+      <div class="result" id="result-remediation1"></div>
+    </div>
+    <button onclick="checkAnswer('scenario1')">Check Answer</button>
+  </div>
+
+  <div class="scenario">
+    <h2>Scenario 2:</h2>
+    <p><strong>CEO:</strong> Our employees are visiting bad, unsecure websites way too often. But have we even started that they shouldn’t be doing yet?</p>
+    <div>
+      <label for="scenario2-category">Control Category Remediation Needed:</label>
+      <select id="scenario2-category">
+        <option value="">Select an option</option>
+        <option value="Technical">Technical</option>
+        <option value="Managerial">Managerial</option>
+        <option value="Operational">Operational</option>
+        <option value="Physical">Physical</option>
+      </select>
+      <div class="result" id="result-scenario2"></div>
+    </div>
+    <div>
+      <label for="scenario2-type">Control Type Remediation Needed:</label>
+      <select id="scenario2-type">
+        <option value="">Select an option</option>
+        <option value="Deterrent">Deterrent</option>
+        <option value="Detective">Detective</option>
+        <option value="Corrective">Corrective</option>
+        <option value="Compensating">Compensating</option>
+        <option value="Directive">Directive</option>
+        <option value="Preventive">Preventive</option>
+      </select>
+      <div class="result" id="result-type2"></div>
+    </div>
+    <div>
+      <label for="scenario2-remediation">Control Remediation Needed:</label>
+      <select id="scenario2-remediation">
+        <option value="">Select an option</option>
+        <option value="Create AUP">Create AUP</option>
+        <option value="Create Permissions Policy">Create Permissions Policy</option>
+        <option value="Install Alarm">Install Alarm</option>
+        <option value="Install Barrier">Install Barrier</option>
+        <option value="Install Host Antivirus">Install Host Antivirus</option>
+        <option value="Install IDS">Install IDS</option>
+        <option value="Install Keycard Entry">Install Keycard Entry</option>
+        <option value="Perform Security Audit">Perform Security Audit</option>
+      </select>
+      <div class="result" id="result-remediation2"></div>
+    </div>
+    <button onclick="checkAnswer('scenario2')">Check Answer</button>
+  </div>
+
+  <div class="scenario">
+    <h2>Scenario 3:</h2>
+    <p><strong>CIO:</strong> It appears that anyone could possibly walk into the server room. We need to evaluate and ensure only authorized people can enter.</p>
+    <div>
+      <label for="scenario3-category">Control Category Remediation Needed:</label>
+      <select id="scenario3-category">
+        <option value="">Select an option</option>
+        <option value="Technical">Technical</option>
+        <option value="Managerial">Managerial</option>
+        <option value="Operational">Operational</option>
+        <option value="Physical">Physical</option>
+      </select>
+      <div class="result" id="result-scenario3"></div>
+    </div>
+    <div>
+      <label for="scenario3-type">Control Type Remediation Needed:</label>
+      <select id="scenario3-type">
+        <option value="">Select an option</option>
+        <option value="Deterrent">Deterrent</option>
+        <option value="Detective">Detective</option>
+        <option value="Corrective">Corrective</option>
+        <option value="Compensating">Compensating</option>
+        <option value="Directive">Directive</option>
+        <option value="Preventive">Preventive</option>
+      </select>
+      <div class="result" id="result-type3"></div>
+    </div>
+    <div>
+      <label for="scenario3-remediation">Control Remediation Needed:</label>
+      <select id="scenario3-remediation">
+        <option value="">Select an option</option>
+        <option value="Create AUP">Create AUP</option>
+        <option value="Create Permissions Policy">Create Permissions Policy</option>
+        <option value="Install Alarm">Install Alarm</option>
+        <option value="Install Barrier">Install Barrier</option>
+        <option value="Install Host Antivirus">Install Host Antivirus</option>
+        <option value="Install IDS">Install IDS</option>
+        <option value="Install Keycard Entry">Install Keycard Entry</option>
+        <option value="Perform Security Audit">Perform Security Audit</option>
+      </select>
+      <div class="result" id="result-remediation3"></div>
+    </div>
+    <button onclick="checkAnswer('scenario3')">Check Answer</button>
+  </div>
+
+  <script>
+    function checkAnswer(scenario) {
+      var category = document.getElementById(scenario + '-category').value;
+      var type = document.getElementById(scenario + '-type').value;
+      var remediation = document.getElementById(scenario + '-remediation').value;
+
+      if (scenario === 'scenario1') {
+        var correctCategory = 'Technical';
+        var correctType = 'Detective';
+        var correctRemediation = 'Install IDS';
+      } else if (scenario === 'scenario2') {
+        var correctCategory = 'Operational';
+        var correctType = 'Deterrent';
+        var correctRemediation = 'Create AUP';
+      } else if (scenario === 'scenario3') {
+        var correctCategory = 'Managerial';
+        var correctType = 'Physical';
+        var correctRemediation = 'Install Keycard Entry';
+      }
+
+      if (category === correctCategory) {
+        document.getElementById('result-' + scenario).innerHTML = 'Correct!';
+      } else {
+        document.getElementById('result-' + scenario).innerHTML = 'Incorrect. Correct Answer: ' + correctCategory;
+      }
+
+      if (type === correctType) {
+        document.getElementById('result-type' + scenario[8]).innerHTML = 'Correct!';
+      } else {
+        document.getElementById('result-type' + scenario[8]).innerHTML = 'Incorrect. Correct Answer: ' + correctType;
+      }
+
+      if (remediation === correctRemediation) {
+        document.getElementById('result-remediation' + scenario[8]).innerHTML = 'Correct!';
+      } else {
+        document.getElementById('result-remediation' + scenario[8]).innerHTML = 'Incorrect. Correct Answer: ' + correctRemediation;
+      }
+    }
+  </script>
+</body>
+</html>
+
